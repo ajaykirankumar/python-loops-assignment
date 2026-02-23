@@ -22,6 +22,7 @@ print("Range: ", np.max(scores) - np.min(scores))
 
 numpy_array= np.arange(1, 50001)
 python_list= list(range(1, 50001))
+
 start_numpy = time.time()
 numpy_sum = np.sum(numpy_array)
 end_numpy = time.time()
@@ -31,6 +32,7 @@ start_python=time.time()
 python_sum= sum(python_list)
 end_python=time.time()
 python_time = end_python - start_python
+
 speed_difference = python_time / numpy_time
 
 print("\n Task 3 Output: ")
